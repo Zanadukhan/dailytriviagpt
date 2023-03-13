@@ -2,6 +2,7 @@ import os
 import schedule
 import time
 from twilio.rest import Client
+from triviagenerator import TriviaGenerator
 
 class TextSender:
     def __init__(self):
