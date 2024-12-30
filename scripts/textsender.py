@@ -1,8 +1,7 @@
 import os
-import schedule
 import time
 from twilio.rest import Client
-from triviagenerator import TriviaGenerator
+from generators.triviagenerator import TriviaGenerator
 
 class TextSender:
     def __init__(self):
@@ -12,6 +11,6 @@ class TextSender:
 
     def send_message(self, text_input, img_input):
             self.client.messages.create(body=text_input,
-                                        from_='+15074797617',
+                                        from_='TWILIO_PHONE_NUMBER',
                                         media_url=img_input,
-                                        to='+17788855315')
+                                        to='YOUR_PHONE_NUMBER')

@@ -1,0 +1,4 @@
+openai==1.58.1
+schedule==1.2.2
+twilio==9.4.1
+replicate==1.0.4

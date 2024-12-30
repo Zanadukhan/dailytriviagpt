@@ -1,11 +1,10 @@
 
+from datetime import datetime
+from generators.triviagenerator import TriviaGenerator
+from generators.imggen import ImgGen
+from scripts.textsender import TextSender
 import schedule
 import time
-from twilio.rest import Client
-from datetime import datetime
-from triviagenerator import TriviaGenerator
-from imggen import ImgGen
-from textsender import TextSender
 
 current_date = datetime.now().strftime('%B %d')
 
